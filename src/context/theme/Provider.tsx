@@ -12,6 +12,7 @@ import themeReducer, {themeInitalState} from './reducer';
 import {ThemeContextProps, ThemeModeType} from './type';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {KeyboardProvider} from 'react-native-keyboard-controller';
+import {MD3DarkTheme, MD3LightTheme, PaperProvider} from 'react-native-paper';
 
 export const ThemeContext = React.createContext<ThemeContextProps>({
   ...themeInitalState,
@@ -28,6 +29,10 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({
 
   const barStyle =
     themeState.mode === 'dark' ? 'light-content' : 'dark-content';
+
+  const paperTheme = React.useMemo(() => {
+    return themeState.mode === 'dark' ? MD3DarkTheme : MD3LightTheme;
+  }, [themeState.mode]);
 
   const themeContextValue: ThemeContextProps = React.useMemo(() => {
     return {
@@ -70,9 +75,11 @@ export const ThemeProvider: React.FC<React.PropsWithChildren> = ({
           backgroundColor={themeState.colors.surface}
         />
         <FRProvider>
-          <ThemeContext.Provider value={themeContextValue}>
-            {children}
-          </ThemeContext.Provider>
+          <PaperProvider theme={paperTheme}>
+            <ThemeContext.Provider value={themeContextValue}>
+              {children}
+            </ThemeContext.Provider>
+          </PaperProvider>
         </FRProvider>
       </SafeAreaProvider>
     </KeyboardProvider>

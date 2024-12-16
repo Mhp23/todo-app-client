@@ -18,7 +18,6 @@ export const CommonColors = {
   pink: '#FF6079',
   mint: '#3EB489',
   peach: '#F87C56',
-  theme: '#6739FF',
   scarlet: '#FF2400',
 };
 
@@ -29,6 +28,7 @@ const DefaultTheme: ThemeProps<{
     colors: {
       ...CommonColors,
       ...PrimaryColors.Light,
+      theme: '#7845ac',
       text: '#000000',
       flat: '#F4F5F6',
       border: '#EBEBEB',
@@ -36,12 +36,14 @@ const DefaultTheme: ThemeProps<{
       disabled: '#E0E0DB',
       background: '#FFFFFE',
       secondText: '#626567',
+      reverseText: '#ffffff',
     },
   },
   DarkTheme: {
     colors: {
       ...CommonColors,
       ...PrimaryColors.Dark,
+      theme: '#dcb8ff',
       text: '#ffffff',
       flat: '#282828',
       border: '#303030',
@@ -49,6 +51,7 @@ const DefaultTheme: ThemeProps<{
       disabled: '#3E3E3E',
       secondText: '#B3B3B3',
       background: '#121212',
+      reverseText: '#000000',
     },
   },
 };

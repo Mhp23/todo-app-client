@@ -23,6 +23,9 @@ export const globalStyles = StyleSheet.create({
   flex: {
     flex: 1,
   },
+  row: {
+    flexDirection: 'row',
+  },
   center: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -114,8 +117,23 @@ export const globalStyles = StyleSheet.create({
   italic: {
     fontStyle: 'italic',
   },
+  textCenter: {
+    textAlign: 'center',
+  },
+  fontSemiBold: {
+    fontWeight: '600',
+  },
+  fontBold: {
+    fontWeight: '800',
+  },
+  textBlack: {
+    color: '#000000',
+  },
   transparent: {
     backgroundColor: 'transparent',
+  },
+  lineThrough: {
+    textDecorationLine: 'line-through',
   },
   underline: {
     textDecorationLine: 'underline',
