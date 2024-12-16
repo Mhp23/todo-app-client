@@ -10,7 +10,7 @@ const themeFallback = (mode: ThemeModeType) => {
 };
 
 export const getCurrentTheme = (mode: ThemeModeType) => {
-  let currentMode: ThemeStateType;
+  let currentMode: ThemeStateType = mode as ThemeStateType;
 
   const systemMode = mode === 'system';
 

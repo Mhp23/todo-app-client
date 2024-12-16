@@ -1,3 +1,4 @@
+import {TodoSchema} from '@/schemas/todoSchema';
 import type {
   NativeStackScreenProps,
   NativeStackNavigationProp,
@@ -8,6 +9,7 @@ export enum StorageKeys {
   Language = '@language',
   SystemMode = '@SystemMode',
   AccessToken = '@AccessToken',
+  RefreshToken = 'RefreshToken',
 }
 export enum StatusCodes {
   OK = 200,
@@ -93,4 +95,13 @@ export interface ApiResponse<T = unknown> {
   data: T;
   status: number;
   message: string;
+}
+export interface ErrorResponse {
+  status: number;
+  message: string;
+}
+
+export interface HomeSection {
+  title: string;
+  data: TodoSchema[];
 }

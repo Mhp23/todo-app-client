@@ -57,7 +57,7 @@ class Storage {
   ) => {
     const keys = this.storage.getAllKeys();
 
-    keysArray.push(StorageKeys.Language, StorageKeys.Theme);
+    keysArray.push(StorageKeys.Theme);
 
     keys.forEach(key => {
       if (!keysArray.includes(key)) {
@@ -67,4 +67,4 @@ class Storage {
   };
 }
 
-export const storage = new Storage('fitovito_storage');
+export const storage = new Storage('gg_todo_storage');

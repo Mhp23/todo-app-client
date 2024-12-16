@@ -20,6 +20,7 @@ export type DefaultThemeColorsProps = {
   disabled: string;
   secondText: string;
   background: string;
+  reverseText: string;
 };
 export type ThemeContextProps = ThemeContentProps & {
   changeMode: (mode: ThemeModeType) => void;
