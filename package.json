@@ -2,6 +2,13 @@
   "name": "todo-app",
   "version": "1.0.0",
   "main": "index.ts",
+  "repository": "https://github.com/Mhp23/go-game-client",
+  "author": "mhp23 <hpousty@gmail.com> (https://github.com/Mhp23)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mhp23/go-game-client/issues"
+  },
+  "homepage": "https://github.com/Mhp23/go-game-client#readme",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
