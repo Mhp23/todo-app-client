@@ -1,10 +1,10 @@
-# Go Game Todo Client
+# Todo App Client
 
 ## Overview
 
-**Go Game Todo Clinet** is a React Native application designed for managing daily tasks efficiently. Built with modern libraries and tools, it ensures a seamless and responsive user experience. This repository contains the client-side code, written in TypeScript, and leverages Expo for easy development and deployment.
+It is a React Native application designed for managing daily tasks efficiently. Built with modern libraries and tools, it ensures a seamless and responsive user experience. This repository contains the client-side code, written in TypeScript, and leverages Expo for easy development and deployment.
 
-### [Go Game Server (Backend)](https://github.com/Mhp23/go-game-server/)
+### [Todo App Server (Backend)](https://github.com/Mhp23/todo-app-server/)
 
 ![Logo](./l-preview.png)
 <br />
@@ -30,8 +30,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Mhp23/go-game-client.git
-   cd go-game-client
+   git clone https://github.com/Mhp23/todo-app-client.git
+   cd todo-app-client
    ```
 
 2. Install dependencies:
@@ -121,7 +121,7 @@ Ensure you have the following installed:
 
 ## Issues
 
-Report issues [here](https://github.com/Mhp23/go-game-client/issues).
+Report issues [here](https://github.com/Mhp23/todo-app-client/issues).
 
 ## License
 

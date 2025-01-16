@@ -54,7 +54,7 @@ const LoginScreen: React.FC<NavigationPropsType<'Auth'>> = ({navigation}) => {
     <Container style={[styles.px12, styles.py16]}>
       <AvoidingView behavior="padding" style={[gs.flex, gs.justifyCenter]}>
         <Text style={[gs.fontBold, gs.textCenter]} variant="headlineMedium">
-          Go Game Todo
+          Todo App
         </Text>
         <Controller
           name="username"

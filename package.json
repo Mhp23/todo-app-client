@@ -1,14 +1,14 @@
 {
-  "name": "todo-app",
+  "name": "todo-app-client",
   "version": "1.0.0",
   "main": "index.ts",
-  "repository": "https://github.com/Mhp23/go-game-client",
+  "repository": "https://github.com/Mhp23/todo-app-client",
   "author": "mhp23 <hpousty@gmail.com> (https://github.com/Mhp23)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mhp23/go-game-client/issues"
+    "url": "https://github.com/Mhp23/todo-app-client/issues"
   },
-  "homepage": "https://github.com/Mhp23/go-game-client#readme",
+  "homepage": "https://github.com/Mhp23/todo-app-client#readme",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
